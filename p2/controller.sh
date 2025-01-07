@@ -21,6 +21,9 @@ echo 'source <(kubectl completion bash)' >> /home/vagrant/.bashrc
 echo 'complete -o default -F __start_kubectl k' >> /home/vagrant/.bashrc
 source /home/vagrant/.bashrc
 
+kubectl get pods -n kube-system
 kubectl get nodes
 kubectl apply -f /vagrant/app1.yaml
+kubectl apply -f /vagrant/app2.yaml
+kubectl apply -f /vagrant/app3.yaml
 kubectl get all
